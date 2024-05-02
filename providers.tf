@@ -3,11 +3,11 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "5.27.0"
+      version = ">= 5.27.0"
     }
     gitlab = {
       source  = "gitlabhq/gitlab"
-      version = "16.11.0"
+      version = ">= 16.11.0"
     }
   }
 }

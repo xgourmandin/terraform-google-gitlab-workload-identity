@@ -14,7 +14,7 @@ locals {
 
   roles_and_accounts = {
     for id, role in flatten([
-      for a, s in local.sa_by_acc_id : [for r in s.roles :  { account_id : a, role : r } ]
+      for a, s in local.sa_by_acc_id : [for r in s.roles : { account_id : a, role : r }]
     ]) : id => role
   }
 }
